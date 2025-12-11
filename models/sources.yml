@@ -8,6 +8,8 @@ sources:
     freshness:
       warn_after: {count: 24, period: hour}
       error_after: {count: 48, period: hour}
+
+##adding medical data tables
     tables:
       - name: patients
         description: "Patient demographic and contact information"
