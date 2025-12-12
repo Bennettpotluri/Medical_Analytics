@@ -29,3 +29,32 @@ error: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Ple
 suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
   Finished 'run' target 'dev' with 13 errors in 323ms
 New version available 2.0.0-preview.83 (run `dbt system update`)
+[0m17:20:05.260876 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 17:20:05.446973 | b280910c-d5ba-4571-b4a2-545443c577bd ==============================
+[0m17:20:05.446973 [info ] [MainThread]: Running with dbt=1.10.15
+[0m17:20:05.447777 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\USER\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\USER\\Desktop\\dbt_core_medical_analytics_11122025\\Medical_Analytics\\logs'}
+[0m17:20:06.406931 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m17:20:06.407300 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m17:20:06.407556 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m17:20:06.718818 [info ] [MainThread]: Registered adapter: snowflake=1.10.4
+[0m17:20:07.036259 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m17:20:07.216140 [info ] [MainThread]: Unable to do partial parsing because of a version mismatch
+[0m17:20:11.367381 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values`. Arguments to generic tests
+should be nested under the `arguments` property.`
+[0m17:20:11.694350 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\USER\Desktop\dbt_core_medical_analytics_11122025\Medical_Analytics\target\manifest.json
+[0m17:20:11.699028 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\USER\Desktop\dbt_core_medical_analytics_11122025\Medical_Analytics\target\semantic_manifest.json
+[0m17:20:11.742567 [info ] [MainThread]: Found 17 models, 1 snapshot, 24 data tests, 3 seeds, 5 sources, 510 macros
+[0m17:20:11.745790 [info ] [MainThread]: 
+[0m17:20:11.746494 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:20:11.747087 [info ] [MainThread]: 
+[0m17:20:11.747816 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:20:11.753237 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MEDICAL_DB'
+[0m17:20:17.088877 [debug] [ThreadPool]: Using snowflake connection "list_MEDICAL_DB"
+[0m17:20:17.089574 [debug] [ThreadPool]: On list_MEDICAL_DB: show terse schemas in database MEDICAL_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "medical_project", "target_name": "dev", "connection_name": "list_MEDICAL_DB"} */
+[0m17:20:17.090034 [debug] [ThreadPool]: Opening a new connection, currently in state init

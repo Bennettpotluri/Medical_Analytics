@@ -1,4 +1,4 @@
-{% snapshot patients_snapshot %}
+{{% snapshot patients_snapshot %}}
 {{
   config(
     target_schema='snapshots',
@@ -8,4 +8,4 @@
   )
 }}
 SELECT * FROM {{ ref('silver_patients') }}
-{% endsnapshot %}
+{{% endsnapshot %}}
